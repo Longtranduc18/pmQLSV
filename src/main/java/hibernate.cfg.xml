@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">325325tt</property>
+        <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/fstapplications</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- Show sql -->
+        <!-- mapping -->
+         <mapping class="model.SinhVien"/>
+            <mapping class="model.NhanSu"/>
+              <mapping class="model.ChuyenNganh"/>
+               <mapping class="model.HocKi"/>
+                 <mapping class="model.ChienDich"/>
+             <mapping class="model.PhanCong"/>
+             <mapping class="model.ChienDichCD"/>
+              <mapping class="model.DropList"/>
+               <mapping class="model.DropListCT"/>
+               <mapping class="model.DanhGiaVH"/>
+               <mapping class="model.DanhGiaEN"/>
+               <mapping class="model.DanhGiaHP"/>
+               <mapping class="model.DanhGia1D3"/>
+               <mapping class="model.LichSuChamSocVH"/>
+               <mapping class="model.LichSuChamSocHP"/>
+               <mapping class="model.LichSuChamSoc1D3"/>
+                <mapping class="model.LichSuChamSocEN"/>
+    </session-factory>
+</hibernate-configuration>
